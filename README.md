@@ -73,3 +73,35 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
   Nest is [MIT licensed](LICENSE).
+
+----------------------------------------------------------------------------------------------------
+
+# Setting Up Sample App
+
+
+## Pre-Requisites
+
+```shell
+yarn global add @nestjs/cli
+
+mkdir my-app
+cd my-app
+nest new 
+yarn
+```
+
+## Adding New Modules
+
+```shell
+nest generate module articles
+nest generate service articles
+nest generate controller articles
+```
+
+## Create DataBase
+
+```psql(12.1)
+CREATE DATABASE nestsample;
+CREATE USER nestuser WITH ENCRYPTED PASSWORD 'nestpass';
+GRANT ALL PRIVILEGES ON DATABASE nestsample TO nestuser;
+```
