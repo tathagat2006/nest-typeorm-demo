@@ -100,7 +100,7 @@ nest generate controller articles
 
 ## Create DataBase
 
-```psql
+```sql
 CREATE DATABASE nestsample;
 CREATE USER nestuser WITH ENCRYPTED PASSWORD 'nestpass';
 GRANT ALL PRIVILEGES ON DATABASE nestsample TO nestuser;
